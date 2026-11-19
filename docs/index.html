@@ -18,8 +18,8 @@
        Rust's bulk-memory output by default. -->
   
 <script type="module">
-import init, * as bindings from '/russet-b4f0870add5a35ca.js';
-const wasm = await init({ module_or_path: '/russet-fca14be6b93ad8dc_bg.wasm' });
+import init, * as bindings from '/russet-6d9abcc6605eed21.js';
+const wasm = await init({ module_or_path: '/russet-b424aa718417bec6_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -36,7 +36,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     #loading_text { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
                     color: #cccccc; font-family: sans-serif; }
   </style>
-<link rel="modulepreload" href="/russet-b4f0870add5a35ca.js" crossorigin="anonymous" integrity="sha384-QN8jYqcpjPJwyrRSzmOhvbmOUeHy+0nc07uQbQ3bFaNJ03UM0W5xebBMWIUQhRr3"><link rel="preload" href="/russet-fca14be6b93ad8dc_bg.wasm" crossorigin="anonymous" integrity="sha384-AF/W71394vOR5LnHBecsyVRRUgxgPhuzWLwb1cwJjTDFKwYLz7pqcOWibVBINmHo" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/russet-6d9abcc6605eed21.js" crossorigin="anonymous" integrity="sha384-UnPCmfzQX49QDn/E7HZTLAE4cu+I+xHEPfCFlE3LJHYjJ9DE7txIeHFGiyV3H/4M"><link rel="preload" href="/russet-b424aa718417bec6_bg.wasm" crossorigin="anonymous" integrity="sha384-ZJNzgR5wYhd2OR+HCf+/DbXeQMXNFACEscq64Qr61QluDO4ZpJpqZKyUK0OpKgrq" as="fetch" type="application/wasm"></head>
 <body>
   <!-- The id is hardcoded in src/main.rs (wasm entry point): keep both in sync. -->
   <canvas id="russet_canvas"></canvas>
