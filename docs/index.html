@@ -19,7 +19,7 @@
   
 <script type="module">
 import init, * as bindings from '/russet-32b40a9a54c2eb6.js';
-const wasm = await init({ module_or_path: '/russet-4f3316d2242052c8_bg.wasm' });
+const wasm = await init({ module_or_path: '/russet-f410e6c05cfeebd8_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -36,7 +36,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     #loading_text { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
                     color: #cccccc; font-family: sans-serif; }
   </style>
-<link rel="modulepreload" href="/russet-32b40a9a54c2eb6.js" crossorigin="anonymous" integrity="sha384-6JRzMYVmYRI8brJV9YCBRMWyjDry39Bh9wtKitq5PQc4vKxmpf5Fj4N3PdzITQQg"><link rel="preload" href="/russet-4f3316d2242052c8_bg.wasm" crossorigin="anonymous" integrity="sha384-YZZA6KAzcfHIYBgR7PwV4FQvoCcYcclmIF0qKCD3vvgf7aO2P/kHVh4asNt5Grdu" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/russet-32b40a9a54c2eb6.js" crossorigin="anonymous" integrity="sha384-6JRzMYVmYRI8brJV9YCBRMWyjDry39Bh9wtKitq5PQc4vKxmpf5Fj4N3PdzITQQg"><link rel="preload" href="/russet-f410e6c05cfeebd8_bg.wasm" crossorigin="anonymous" integrity="sha384-GhkFqqfi3f6Wch26oYSuCOEi8wZh8Cgtn+3jj91w2w1fPUZT0HINS9t8vs9RFuqm" as="fetch" type="application/wasm"></head>
 <body>
   <!-- The id is hardcoded in src/main.rs (wasm entry point): keep both in sync. -->
   <canvas id="russet_canvas"></canvas>
